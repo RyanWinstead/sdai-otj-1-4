@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #333; /* Dark background color */
+            overflow: hidden; /* Ensure navbar stays contained */
+        }
+
+        .navbar a {
+            float: left; /* Aligns the links horizontally */
+            display: block;
+            color: white; /* Link text color */
+            text-align: center;
+            padding: 14px 20px; /* Padding around the links */
+            text-decoration: none; /* Remove underline */
+            font-size: 17px; /* Text size */
+        }
+
+        /* Hover effect */
+        .navbar a:hover {
+            background-color: #ddd; /* Light background on hover */
+            color: black; /* Dark text on hover */
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                float: none;
+                width: 100%; /* Stack the links vertically on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#menu">MENU</a>
+        <a href="#hours">HOURS</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#locations">LOCATIONS</a>
+    </div>
+
+</body>
+</html>
