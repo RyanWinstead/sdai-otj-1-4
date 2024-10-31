@@ -22,12 +22,27 @@
 .aboutus{
     font-size: 20px;
 }
-.menu-item{
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
+.menu-item {
+    border: 2px solid #ccc; /* Example border */
+    padding: 10px; /* Add some padding */
+    margin: 10px 0; /* Space between menu items */
+    overflow: hidden; /* Prevent overflow */
+    box-sizing: border-box; /* Include padding and border in total width and height */
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space between text and image */
 }
+
+.menu-item h3, .menu-item p {
+    margin: 0; /* Remove default margin for better alignment */
+}
+
+.menu-item img {
+    width: 80px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Space between text and image */
+}
+
 .menu-title{
     width: 800px;
     color:aqua;
