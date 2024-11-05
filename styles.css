@@ -22,6 +22,9 @@
 
 .aboutus{
     font-size: 20px;
+    line-height: 1.5;
+    /*font-family: ;*/
+
 }
 .menu-item {
     font-family: 'Times New Roman', Times, serif;
