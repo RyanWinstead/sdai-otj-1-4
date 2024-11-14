@@ -1,3 +1,13 @@
+
+h1, h2, h3, h4, p{
+/*.tenali-ramakrishna-regular {*/
+    font-family: "Tenali Ramakrishna", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+  }
+  
+
 .hero {
     border-color: rgba(145, 44, 44, 0.54);
     border-width: 8px;
@@ -21,13 +31,13 @@
 }
 
 .aboutus{
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1.5;
     /*font-family: ;*/
 
 }
 .menu-item {
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
     border: 2px solid #ccc; /* Example border */
     padding: 10px; /* Add some padding */
     margin: 10px 0; /* Space between menu items */
@@ -50,8 +60,79 @@
 
 
 .menu-title{
-    font-size: 30px;
+    font-size: 40px;
     color:rgb(11, 19, 112);
     text-align: center;
 
+}
+li{
+    font-family: "Tenali Ramakrishna", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1;
+    }
+/* Flexbox container for food items */
+.food-gallery {
+    display: flex;            /* Enable flexbox */
+    justify-content: space-between; /* Distribute images evenly */
+    gap: 20px;                /* Space between images */
+    flex-wrap: wrap;          /* Allow wrapping of items to the next line if space is needed */
+    margin: 0 auto;           /* Center the container */
+    max-width: 100%;          /* Allow container to stretch to full width */
+}
+
+/* Style for each image inside the flex container */
+.food-gallery img {
+    width: 100%;              /* Ensure the images take up full width of their container */
+    height: auto;             /* Maintain aspect ratio */
+    max-width: 22%;           /* Limit the max width to 22% of the container width */
+    object-fit: cover;        /* Crop images to fit within their container without distortion */
+    border-radius: 8px;       /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for visual effect */
+}
+
+/* Responsive layout: 2 items per row on smaller screens */
+@media (max-width: 1024px) {
+    .food-gallery img {
+        max-width: 45%;  /* 2 images per row on medium screens */
+    }
+}
+
+/* Responsive layout: 1 item per row on very small screens */
+@media (max-width: 768px) {
+    .food-gallery img {
+        max-width: 90%;  /* 1 image per row on small screens */
+    }
+}
+
+
+.socials {
+    display: flex;            /* Enable flexbox */
+    justify-content: space-between; /* Distribute images evenly */
+    gap: 20px;                /* Space between images */
+    flex-wrap: wrap;          /* Allow wrapping of items to the next line if space is needed */
+    margin: 0 auto;           /* Center the container */
+    max-width: 20%;          /* Allow container to stretch to full width */
+}
+.socials img {
+    width: 100%;              /* Ensure the images take up full width of their container */
+    height: auto;             /* Maintain aspect ratio */
+    max-width: 100%;           /* Limit the max width to 22% of the container width */
+    object-fit: cover;        /* Crop images to fit within their container without distortion */
+    border-radius: 8px;       /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for visual effect */
+}
+/* Responsive layout: 2 items per row on smaller screens */
+@media (max-width: 1024px) {
+    .socials img {
+        max-width: 45%;  /* 2 images per row on medium screens */
+    }
+}
+
+/* Responsive layout: 1 item per row on very small screens */
+@media (max-width: 768px) {
+    .socials img {
+        max-width: 90%;  /* 1 image per row on small screens */
+    }
 }
